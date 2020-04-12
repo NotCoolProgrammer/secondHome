@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон Фотопечати</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/hot-sneaks/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/hot-sneaks/theme.css">
+    <script src="https://kit.fontawesome.com/74db1e8a9f.js" crossorigin="anonymous"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script> 
+</head>
+<body>
+    <header class="header__class flex">
+        <nav class="menu__bar">
+            <ul class="menu__ul flex">
+                <li class = "menu__li"><a class="menu__a" href="#">Главная</a></li>
+                <li class = "menu__li"><a class="menu__a" href="#">Обо мне</a></li>
+                <li class = "menu__li"><a class="menu__a" href="#">Фотоуслуги</a></li>
+                <li class = "menu__li"><a class="menu__a" href="#">Акции</a></li>
+                <li class = "menu__li"><a class="menu__a" href="#">Мои работы</a></li>
+            </ul>
+        </nav>
+        <div class="description flex">
+            <a href="#">
+                <h1>Александр Твеленев</h1>
+                <h2>Фотограф</h2>
+            </a>
+        </div>
+        <div class="feedback">
+            <button class="feedback__button buttons open__form">Связаться со мной</button>
+        </div>
+    </header>
+
+    <section class="main__photo container">
+        <div class="border">
+            <img src="img/woman.jpg" alt="">
+            <p class="main__photo__description">Останови время</p>
+        </div>
+    </section>
+
+    <section class="cards container flex">
+        <div class="card">
+            <img src="img/card1.jpeg" alt="">
+            <h1 class="card__description">Портрет</h1>
+            <a class="card__buy buttons" href="#">В галерею</a>
+        </div>
+        <div class="card">
+            <img src="img/nature.jpg" alt="">
+            <h1 class="card__description">Природа</h1>
+            <a class="card__buy buttons" href="#">В галерею</a>
+        </div>
+        <div class="card">
+            <img src="img/card3.jpg" alt="">
+            <h1 class="card__description">Студийная съемка</h1>
+            <a class="card__buy buttons" href="#">В галерею</a>
+        </div>
+        <div class="card">
+            <img src="img/card4.jpg" alt="">
+            <h1 class="card__description">Фото на природе</h1>
+            <a class="card__buy buttons" href="#">В галерею</a>
+        </div>
+        <div class="card">
+            <img src="img/cat.jpg" alt="">
+            <h1 class="card__description">Животные</h1>
+            <a class="card__buy buttons" href="#">В галерею</a>
+        </div>
+        <div class="card">
+            <img src="img/card6.jpeg" alt="">
+            <h1 class="card__description">Черным по белому</h1>
+            <a class="card__buy buttons" href="#">В галерею</a>
+        </div>
+    </section>
+    
+    <section class="info container  ">
+        <img src="img/main.jpg" alt="">
+        <div class="info__about__me">
+            <h1 class="text__1">Я профессионально занимаюсь фотографией вот уже более 7 лет.</h1>
+            <p class="text__2">Фотография для меня не только работа и уж никак не хобби. Фотография для меня - искусство и самое важное и ключевое занятие в жизни, а потому я подхожу к своей работе с максимальной ответственностью, в то же время оставляя пространство для творчества и креативных идей.</p>
+            <button class="about__me buttons open__form">Связаться со мной</button>
+        </div>
+    </section>
+
+    <section class="footer container flex">
+        <div class="copyright">
+            <p>Copyright © 2020 Tyumen Elite Photo</p>
+        </div>
+        <div class="social__networks flex">
+            <a href="https://www.web-telegram.ru/#/im?p=s1339537687_6200851335557569631"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram"></i></a>
+            <a href="https://vk.com/alexandr.tvelenev"><i class="fab fa-vk"></i></a>
+        </div>
+        <div class="contacts flex">
+            <i class="fas fa-phone-alt"></i>
+            <div class="margin">
+                <p class="first_tel">89829173875</p>
+                <p class="second_tel">88005553535</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+$buttonColor: #424942
+$mainColor: #4a4a4a
+$notMainColor: #606060
+$buttonBorder: #bebebe
+$hover: #909590
+
+
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: Arial, Helvetica, sans-serif
+
+.container
+    width: 1251px
+    margin: 0 auto
+
+.flex
+    display: flex
+
+.buttons
+    cursor: pointer
+    background-color: #fff
+    color: $buttonColor
+    border: 1px solid $buttonBorder
+    border-radius: 35px
+    font-size: 15px
+    outline: none
+    transition: background-color 1s, color 1s
+    &:hover
+        background-color: black
+        color: #fff
+
+.header__class 
+    padding: 30px 50px
+    align-items: center
+    position: relative
+    .menu__bar
+        width: 42.5%  
+        .menu__li
+            list-style-type: none
+        .menu__a
+            padding: 10px
+            text-decoration: none
+            color: $buttonColor
+            font-weight: 500
+            transition: color 0.8s
+            &:hover
+                color: $hover
+    .description
+        width: 15%
+        flex-direction: column
+        text-align: center
+        a
+            text-decoration: none
+            h1
+                color: $mainColor
+            h2
+                font-size: 20px
+                color: $notMainColor
+                font-weight: 500
+    .feedback
+        width: 42.5%
+        position: relative
+        &__button
+            padding: 15px 30px
+            position: absolute
+            top: -28px
+            right: 0px
+            font-weight: 600
+            outline: none
+    .surface__container
+        top: 60%
+        left: 35%
+        position: absolute
+        // position: relative
+        z-index: 100
+        display: flex
+        flex-direction: column
+        width: 400px
+        min-height: 495px
+        background-color: #d6d6d6
+        padding: 30px
+        border-radius: 5px
+        #main-form
+            display: flex
+            flex-direction: column
+            #input1, #input2, #input3
+                padding: 8px 10px
+                border: 1px solid $buttonBorder
+                margin-bottom: 8px
+                &:focus
+                    outline: none
+            label, .agreement
+                color: $mainColor
+                font-weight: 600
+                margin-bottom: 7px
+            .agreement
+                margin-bottom: 14px
+            #checkbox
+                margin-right: 6px
+            #label
+                color: $buttonColor
+                font-weight: 300
+            .warning1, .warning2, .warning3
+                display: none
+                color: red
+                padding-bottom: 12px
+            .warning4
+                display: none
+                color: red
+                padding-left: 15px
+            .form__button
+                width: 150px
+                height: 50px
+                text-align: center
+                font-weight: 600
+                margin-top: 20px
+
+        .surface__header
+            color: $mainColor
+            font-size: 30px
+            font-weight: 600
+            padding-bottom: 20px
+        .close__window
+            cursor: pointer
+            height: 50px
+            width: 50px 
+            display: flex
+            justify-content: center
+            align-items: center 
+            position: absolute
+            background-color: #ffffff
+            top: 0
+            right: 0
+            i
+                font-size: 35px
+
+
+.border
+    position: relative
+    width: 100%
+    border: 25px solid #fff
+    box-shadow: 0px 0px 50px -35px black
+    .main__photo__description
+        font-size: 100px
+        position: absolute
+        bottom: 15px
+        right: 15px
+        color: #fff
+        font-family: Noto Serif, serif
+        font-weight: 700
+        opacity: 0.7
+
+.cards
+    flex-wrap: wrap
+    padding-top: 60px
+    .card
+        &__description
+            text-align: center
+            padding-top: 40px
+            padding-bottom: 20px
+            color: $notMainColor;
+        &__buy
+            display: inline-block
+            text-decoration: none
+            font-weight: 300
+            padding: 20px 65px
+            margin-left: 104px
+            margin-bottom: 35px
+
+.info
+    position: relative
+    &__about__me
+        position: absolute 
+        width: 540px
+        height: 445px
+        background-color: #fff
+        padding: 40px
+        bottom: -25%
+        box-shadow: 0px 0px 50px -30px black
+        border-radius: 7px
+        .text__1
+            color: $mainColor
+            font-size: 28px
+        .text__2
+            color: $mainColor
+            font-size: 15px
+            line-height: 27px
+            margin-top: 30px
+            font-family: Fira Sans, sans-serif;
+        .about__me
+            font-weight: 300
+            margin-top: 30px
+            padding: 15px 30px
+    
+.footer
+    justify-content: space-between
+    margin-top: 170px
+    .copyright 
+        p
+            padding: 20px
+            color: $mainColor
+    .social__networks
+        width: 150px 
+        justify-content: space-between
+        align-items: center
+        a
+            font-size: 25px
+            color: $mainColor
+            transition: color 0.7s
+            &:hover
+                color: #9e9595
+    .contacts
+        width: 300px
+        i
+            font-size: 25px
+            display: flex
+            align-items: center
+            padding-left: 155px
+            color: $mainColor
+        .first_tel, .second_tel
+            padding: 5px
+            color: $mainColor
+        .margin
+            margin-left: 15px
+
